@@ -1,12 +1,6 @@
 .about-me {
   height: 100vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../images/nyc.jpeg);
-  background-size: cover;
+  background-color: white;
 }
 
 .about-me-text {
@@ -17,11 +11,14 @@
 }
 
 .about-me-text {
+  font-family: "Arvo", serif;
   text-align: center;
+  color: color(primary-text-color);
 }
 
 .about-me-title {
-  font-size: 4rem;
+  font-size: 3rem;
+  color: color(accent-color);
 }
 
 .about-me-subtitle {
@@ -30,4 +27,5 @@
 
 .about-me-info {
   font-size: 1.5rem;
+  width: 35vw;
 }
