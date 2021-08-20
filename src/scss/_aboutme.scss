@@ -1,6 +1,8 @@
 .about-me {
   height: 100vh;
   background-color: white;
+  display: flex;
+  flex-direction: row;
 }
 
 .about-me-text {
@@ -29,4 +31,8 @@
 .about-me-info {
   font-size: 1.5rem;
   width: 35vw;
+}
+
+.picture {
+  width: 50vw;
 }
