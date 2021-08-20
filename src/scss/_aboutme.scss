@@ -11,18 +11,19 @@
 }
 
 .about-me-text {
-  font-family: "Arvo", serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   color: color(primary-text-color);
 }
 
 .about-me-title {
+  font-weight: 700;
   font-size: 3rem;
   color: color(accent-color);
 }
 
 .about-me-subtitle {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .about-me-info {
