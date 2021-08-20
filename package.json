@@ -18,9 +18,8 @@
   },
   "homepage": "https://github.com/Evany226/parcel-nodejs#readme",
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0",
-    "@parcel/transformer-sass": "^2.0.0-beta.2",
-    "parcel": "^2.0.0-beta.2"
+    "parcel": "^2.0.0-rc.0",
+    "parcel-bundler": "^1.12.5"
   },
   "dependencies": {},
   "description": ""
