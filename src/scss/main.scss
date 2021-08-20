@@ -1,3 +1,42 @@
 body {
-  background-color: red;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.intro {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, white, #1cb5e0);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+  text-align: center;
+  width: 35vw;
+}
+
+.title {
+  font-style: bold;
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: black;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: black;
+}
+
+.portrait {
+  width: 20vw;
+  border-radius: 3rem;
+  border: solid black 0.1rem;
 }
