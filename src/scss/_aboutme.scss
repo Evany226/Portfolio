@@ -6,14 +6,13 @@
 }
 
 .about-me-text {
+  width: 50vw;
   font-family: "Roboto", sans-serif;
   color: color(primary-text-color);
   text-align: center;
   padding: 5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-column-center;
 }
 
 .about-me-title {
@@ -35,7 +34,6 @@
 
 .image-parent {
   width: 50vw;
-  height: 100vh;
   background-color: color(primary-color);
 }
 
@@ -77,4 +75,33 @@
   top: 5rem;
   left: 5%;
   z-index: 2;
+}
+
+@include mobile {
+  .about-me-text {
+    margin-top: 3rem;
+    padding: 0;
+  }
+  .about-me-title {
+    font-size: 2rem;
+  }
+  .about-me-subtitle {
+    font-size: 1.5rem;
+  }
+  .about-me-info {
+    font-size: 0.7rem;
+  }
+
+  .image-gallery {
+    width: 50vw;
+    @include flex-column-center;
+    justify-content: space-evenly;
+    margin: 0rem;
+  }
+
+  .image {
+    width: 40vw;
+    position: initial;
+    margin-top: 5rem;
+  }
 }

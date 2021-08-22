@@ -1,0 +1,57 @@
+@import "_mixins.scss";
+
+@import "_palette.scss";
+
+#navbar {
+  background-color: color(primary-color-dark);
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+  position: relative;
+  align-items: center;
+}
+
+#navbar-bars {
+  opacity: 0;
+  @include tablet {
+    opacity: 1;
+    position: absolute;
+    font-size: 2rem;
+    right: 22px;
+    top: 15px;
+  }
+}
+
+#navbar-logo {
+  width: 3rem;
+  align-items: center;
+}
+
+#navbar-menu {
+  align-items: center;
+  text-align: center;
+  margin-right: 6rem;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.navbar-menulinks {
+  color: color(primary-color-light);
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  padding: 1rem 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  opacity: 0.9;
+}
+
+.navbar-menulinks:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}

@@ -1,31 +1,31 @@
+@import "_navbar.scss";
+
 @import "_palette.scss";
 
 @import "_aboutme.scss";
+
+@import "_mixins.scss";
 
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   background-color: color(primary-color-dark);
 }
 
 .intro {
-  margin-top: 3rem;
   margin-bottom: 1rem;
   background-color: color(primary-color);
   height: 70vh;
-  display: flex;
-  flex-direction: row;
+  @include flex-row-center;
   justify-content: center;
-  align-items: center;
 }
 
 .intro-text {
   display: flex;
   flex-direction: column;
-  padding: 0rem;
+  padding-right: 2rem;
   margin-right: 5rem;
   text-align: center;
   width: 35vw;
@@ -55,6 +55,25 @@ body {
 }
 
 .highlight1 {
-  color: color(accent-color);
+  color: #24bbff;
   font-weight: 600;
+}
+
+@include mobile {
+  .intro-text {
+    padding-right: 0rem;
+    margin-right: 3rem;
+  }
+  .intro-text {
+    width: 40vw;
+  }
+  .intro-title {
+    font-size: 2rem;
+  }
+  .intro-subtitle {
+    font-size: 1.5rem;
+  }
+  .portrait {
+    width: 35vw;
+  }
 }
