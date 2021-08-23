@@ -27,6 +27,15 @@
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
 
+.skills-label::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0.1rem;
+  margin: 0.5rem auto 1rem;
+  background: currentColor;
+}
+
 .skills-column {
   text-align: center;
   color: color(primary-color-text);
