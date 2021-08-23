@@ -15,6 +15,7 @@
 
 #navbar-bars {
   opacity: 0;
+  color: color(accent-color);
   @include tablet {
     opacity: 1;
     position: absolute;
@@ -32,7 +33,7 @@
 #navbar-menu {
   align-items: center;
   text-align: center;
-  margin-right: 10rem;
+  margin-right: 3rem;
 
   @include tablet {
     display: none;
@@ -44,14 +45,21 @@ a.active {
 }
 
 .navbar-menulinks {
-  color: color(primary-color-light);
+  color: color(primary-color-text);
   align-items: center;
   text-decoration: none;
   justify-content: center;
   padding: 1rem 1rem;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+#contacts {
+  padding: 0.5rem;
+  background-color: color(accent-color);
+  border-radius: 2rem;
   font-weight: 900;
-  font-size: 1.8rem;
 }
 
 .navbar-menulinks:hover {
