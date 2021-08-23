@@ -1,0 +1,69 @@
+@import "_mixins.scss";
+
+@import "_palette.scss";
+
+.skills {
+  @include flex-column-center;
+  background: gray;
+  background-image: url("/images/laptop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  justify-content: center;
+}
+
+.skills-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 7rem;
+}
+
+.skills-label {
+  font-size: 4rem;
+  color: color(accent-color);
+  font-weight: 900;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+.skills-column {
+  text-align: center;
+  color: color(primary-color-text);
+  margin: 2rem;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.skills-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@include mobile {
+  .skills-parent {
+    @include flex-column-center;
+    margin: 0 auto;
+  }
+  .skills-label {
+    font-size: 2.5rem;
+  }
+
+  .skills-title {
+    font-size: 1.8rem;
+  }
+
+  .skills-text {
+    font-size: 0.8rem;
+  }
+}
+
+@include tablet {
+  .skills-parent {
+    @include flex-column-center;
+    margin: 0 auto;
+  }
+}
