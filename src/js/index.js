@@ -6,7 +6,7 @@ const cycle = document.querySelector(".intro-title");
 let i = 0;
 const cycleText = () => {
   cycle.innerHTML = introList[i];
-  i = ++i % introList.length;
+  i = (i + 1) % introList.length;
 };
 cycleText();
 setInterval(cycleText, 3000);
