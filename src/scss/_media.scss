@@ -1,0 +1,25 @@
+@import "_mixins.scss";
+
+@include desktop {
+  html {
+    font-size: 140%;
+  }
+}
+
+@include largetablet {
+  html {
+    font-size: 110%;
+  }
+}
+
+@include tablet {
+  html {
+    font-size: 90%;
+  }
+}
+
+@include mobile {
+  html {
+    font-size: 50%;
+  }
+}

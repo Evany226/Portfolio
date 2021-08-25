@@ -48,17 +48,6 @@
   border: solid color(divider-color) 0.2rem;
 }
 
-@include mobile {
-  html {
-    font-size: 50%;
-  }
-
-  .image {
-    width: 40vw;
-    position: initial;
-  }
-}
-
 @include tablet {
   .about-me-text {
     padding: 0rem;

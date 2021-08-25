@@ -52,13 +52,6 @@
   font-weight: 300;
 }
 
-@include mobile {
-  .skills-parent {
-    @include flex-column-center;
-    margin: 0 auto;
-  }
-}
-
 @include tablet {
   .skills-parent {
     @include flex-column-center;

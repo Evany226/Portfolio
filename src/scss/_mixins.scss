@@ -17,6 +17,24 @@
   font-size: 62.5%;
 }
 
+@mixin desktop {
+  @media screen and (min-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin largetablet {
+  @media screen and (max-width: 1025px) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media screen and (max-width: 768px) {
     @content;

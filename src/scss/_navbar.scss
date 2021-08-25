@@ -31,9 +31,10 @@
 }
 
 #navbar-menu {
-  align-items: center;
-  text-align: center;
+  @include flex-row-center;
   margin-right: 8rem;
+  text-decoration: none;
+  list-style-type: none;
 
   @include tablet {
     display: none;
@@ -46,9 +47,7 @@ a.active {
 
 .navbar-menulinks {
   color: color(primary-color-text);
-  align-items: center;
   text-decoration: none;
-  justify-content: center;
   padding: 1rem 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
