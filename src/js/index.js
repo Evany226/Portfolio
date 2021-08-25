@@ -9,4 +9,4 @@ const cycleText = () => {
   i = (i + 1) % introList.length;
 };
 cycleText();
-setInterval(cycleText, 3000);
+setInterval(cycleText, 4000);

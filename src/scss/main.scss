@@ -44,6 +44,42 @@ body {
   font-weight: 400;
   font-size: 4rem;
   color: color(primary-color-text);
+  -webkit-animation: flickerAnimation 4s infinite;
+  -moz-animation: flickerAnimation 4s infinite;
+  -o-animation: flickerAnimation 4s infinite;
+  animation: flickerAnimation 4s infinite;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(10rem);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .intro-subtitle {
@@ -73,12 +109,7 @@ body {
   .intro-text {
     width: 40vw;
   }
-  .intro-title {
-    font-size: 2rem;
-  }
-  .intro-subtitle {
-    font-size: 1.5rem;
-  }
+
   .portrait {
     width: 35vw;
   }
