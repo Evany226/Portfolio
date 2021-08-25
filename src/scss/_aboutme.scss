@@ -1,7 +1,12 @@
+@import "_mixins.scss";
+
+@import "_palette.scss";
+
 .about-me {
   background-color: white;
   display: flex;
   flex-direction: row;
+  border-top: solid 1rem color(primary-color-dark);
 }
 
 .about-me-text {

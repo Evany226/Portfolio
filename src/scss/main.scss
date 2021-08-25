@@ -10,8 +10,11 @@
 
 @import "_media.scss";
 
+@import "_portfolio.scss";
+
 * {
   scroll-behavior: smooth;
+  max-width: 100vw;
 }
 
 body {
@@ -19,11 +22,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: color(primary-color-dark);
+  background-color: white;
 }
 
 .intro {
-  margin-bottom: 1rem;
   background-color: color(primary-color);
   @include flex-row-center;
   justify-content: center;

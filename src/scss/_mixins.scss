@@ -24,7 +24,7 @@
 }
 
 @mixin laptop {
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1281px) {
     @content;
   }
 }
@@ -42,7 +42,7 @@
 }
 
 @mixin mobile {
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
     @content;
   }
 }

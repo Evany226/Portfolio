@@ -1,0 +1,57 @@
+@import "_mixins.scss";
+
+@import "_palette.scss";
+
+.my-work {
+  border-top: solid 1rem color(primary-color-dark);
+  background-color: white;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.my-work-title {
+  font-size: 3rem;
+  margin: 0;
+  padding-top: 3rem;
+  color: color(accent-color);
+}
+
+.my-work-subtitle {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+}
+
+.portfolio-image {
+  width: 45vw;
+  margin: 1rem;
+  border-radius: 1.5rem;
+}
+
+@include laptop {
+  .portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+
+@include largetablet {
+  .portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+}
+
+@include tablet {
+  .portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@include mobile {
+  .portfolio-image {
+    width: 75vw;
+  }
+}
