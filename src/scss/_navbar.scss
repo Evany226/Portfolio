@@ -2,41 +2,40 @@
 
 @import "_palette.scss";
 
-#navbar {
+.navbar {
   background-color: color(primary-color-dark);
-  height: 3rem;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: 0.5rem;
-  align-items: center;
 }
 
-#navbar-bars {
-  padding-right: 0.5rem;
-  opacity: 0;
+.navbar-toggle {
+  text-decoration: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
   color: color(accent-color);
-  @include tablet {
-    display: flex;
-    opacity: 1;
-    font-size: 2rem;
-  }
 }
 
-#navbar-logo {
+.fa-bars {
+  font-size: 3rem;
+}
+
+.navbar-logo {
   width: 3rem;
   align-items: center;
 }
 
-#navbar-menu {
-  @include flex-row-center;
-  margin-right: 8rem;
+.navbar-menu {
+  padding: 0rem;
+  margin-right: 2rem;
+  display: flex;
   text-decoration: none;
   list-style-type: none;
-
-  @include tablet {
-    display: none;
-  }
 }
 
 a.active {
@@ -46,13 +45,13 @@ a.active {
 .navbar-menulinks {
   color: color(primary-color-text);
   text-decoration: none;
-  padding: 1rem 1rem;
+  padding: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
 }
 
-#contacts {
+.contacts {
   padding: 0.5rem;
   background-color: color(accent-color);
   border-radius: 2rem;
@@ -60,9 +59,44 @@ a.active {
 }
 
 .navbar-menulinks:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background-color: color(primary-color);
   transition: 0.3s;
 }
 
-@include tablet;
+@include tablet {
+  .navbar-toggle {
+    display: flex;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .navbar-menulinks {
+    padding: 0.5rem;
+    font-size: 2.5rem;
+  }
+
+  .contacts {
+    padding: 0rem;
+    background-color: color(primary-color-dark);
+    border-radius: 0rem;
+    font-weight: 300;
+  }
+
+  .navbar-menulinks.active {
+    display: flex;
+  }
+  .navbar-menu.active {
+    display: flex;
+  }
+}
