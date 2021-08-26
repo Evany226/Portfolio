@@ -3,7 +3,6 @@
 @import "_palette.scss";
 
 .skills {
-  border-top: solid 1rem color(primary-color-dark);
   @include flex-column-center;
   background: gray;
   background-image: url("/images/laptop.jpg");
