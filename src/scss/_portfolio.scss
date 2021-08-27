@@ -2,55 +2,52 @@
 
 @import "_palette.scss";
 
-.my-work {
-  background-color: white;
-  margin-bottom: 5rem;
-  text-align: center;
-}
-
-.my-work-title {
-  font-size: 3rem;
-  margin: 0;
-  padding-top: 3rem;
-  color: color(accent-color);
-}
-
-.my-work-subtitle {
-  font-size: 2rem;
-  padding-bottom: 3rem;
-}
-
 .portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  @include flex-column-center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-color: color(primary-color-text);
 }
 
 .portfolio-image {
-  width: 45vw;
-  margin: 1rem;
-  border-radius: 1.5rem;
+  width: 70vw;
+  border-radius: 2rem;
 }
 
-@include laptop {
-  .portfolio {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  }
+.portfolio-title {
+  font-size: 3.5rem;
+  color: color(primary-text-color);
 }
 
-@include largetablet {
-  .portfolio {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  }
+.portfolio-title::after {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 0.1rem;
+  margin: 0.5rem auto 1rem;
+  background: currentColor;
 }
 
-@include tablet {
-  .portfolio {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
+.portfolio-subtitle {
+  padding: 5rem;
+  max-width: 60vw;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: color(primary-text-color);
 }
 
-@include mobile {
-  .portfolio-image {
-    width: 75vw;
-  }
+.portfolio-button {
+  font-weight: 500;
+  color: color(primary-color-text);
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  margin-bottom: 3rem;
+  background-color: color(accent-color);
+  border-radius: 0.5rem;
+}
+
+.portfolio-button:hover {
+  filter: grayscale(25%);
+  border: solid 0.1rem color(primary-color-dark);
 }
