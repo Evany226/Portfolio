@@ -5,7 +5,6 @@
 .about-me {
   background-color: white;
   display: flex;
-  flex-direction: row;
   border-top: solid 1rem color(primary-color-dark);
 }
 
@@ -14,7 +13,6 @@
   font-family: "Roboto", sans-serif;
   color: color(primary-text-color);
   text-align: center;
-  padding: 5rem;
   display: flex;
   @include flex-column-center;
   justify-content: center;
@@ -49,15 +47,36 @@
 }
 
 .image {
-  width: 22vw;
-  border: solid color(divider-color) 0.2rem;
+  width: 30vw;
+  border: solid color(primary-color-text) 0.1rem;
+  border-radius: 0.5rem;
+}
+
+@include largetablet {
+  .image {
+    width: 40vw;
+  }
 }
 
 @include tablet {
   .about-me-text {
     padding: 0rem;
   }
+
   .image {
     width: 40vw;
+  }
+
+  .image-gallery {
+    height: 80vh;
+  }
+}
+
+@include mobile {
+  .image-gallery {
+    height: 60vh;
+  }
+  .about-me-info {
+    font-size: 1.2rem;
   }
 }
