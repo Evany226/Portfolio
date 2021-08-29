@@ -41,9 +41,10 @@
 }
 
 .image-gallery {
-  height: 100vh;
+  height: 100%;
   @include flex-column-center;
   justify-content: space-evenly;
+  margin-bottom: 5rem;
 }
 
 .image {
@@ -59,24 +60,10 @@
 }
 
 @include tablet {
-  .about-me-text {
-    padding: 0rem;
-  }
-
   .image {
     width: 40vw;
-  }
-
-  .image-gallery {
-    height: 80vh;
   }
 }
 
 @include mobile {
-  .image-gallery {
-    height: 60vh;
-  }
-  .about-me-info {
-    font-size: 1.2rem;
-  }
 }

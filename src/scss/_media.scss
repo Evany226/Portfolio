@@ -8,13 +8,13 @@
 
 @include largetablet {
   html {
-    font-size: 110%;
+    font-size: 100%;
   }
 }
 
 @include tablet {
   html {
-    font-size: 90%;
+    font-size: 75%;
   }
 }
 
