@@ -5,7 +5,7 @@
 .skills {
   @include flex-column-center;
   background: gray;
-  background-image: url("/images/laptop.jpg");
+  background-image: url("../images/laptop.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
