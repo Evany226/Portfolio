@@ -5,7 +5,6 @@
 .my-work {
   background-color: white;
   margin-bottom: 5rem;
-  text-align: center;
 }
 
 .my-work-title {
@@ -13,40 +12,25 @@
   margin: 0;
   padding-top: 3rem;
   color: color(accent-color);
+  text-align: center;
 }
 
 .my-work-subtitle {
   font-size: 2rem;
   padding-bottom: 3rem;
+  text-align: center;
 }
 
 .collection {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .collection-image {
-  width: 45vw;
-  margin: 1rem;
+  width: 40vw;
+  margin: 2rem;
   border-radius: 1.5rem;
-}
-
-@include laptop {
-  .collection {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  }
-}
-
-@include largetablet {
-  .collection {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  }
-}
-
-@include tablet {
-  .collection {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
 }
 
 @include mobile {
